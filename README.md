@@ -1,6 +1,7 @@
 # serverless-graph-queries
 
-Using Serverless platform and AWS Lambda to make queries on a Neo4j database
+Using <a href="http://serverless.com">Serverless platform</a>
+and AWS Lambda to make queries on a Neo4j database
 
 Tutorial
 
