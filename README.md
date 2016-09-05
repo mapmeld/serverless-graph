@@ -18,6 +18,10 @@ heroku run:detached scrape-heroku.py
 
 Copy the Neo4j graph credentials URL for use in the serverless script
 
+## Explaining Serverless
+
+https://medium.com/p/deploying-your-next-api-with-serverless-92ebea11d799
+
 ## License
 
 Open source, MIT license
