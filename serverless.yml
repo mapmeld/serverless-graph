@@ -33,6 +33,8 @@ provider:
 functions:
   hello:
     handler: handler.hello
+  artistid:
+    handler: handler.artistid
 
 #   you can add any of the following events
 #   events:

@@ -14,4 +14,18 @@ module.exports.hello = (event, context, cb) => {
   });
 };
 
+module.exports.artistid = (event, context, cb) => {
+  db.cypher({
+    query: 'MATCH (a:Artist { moma_id: {MOMA_ID} }) RETURN a',
+    params: {
+      MOMA_ID: event.id
+    }
+  }, function(err, responses) {
+    cb(null, {
+      artist: (responses[0] || {}).a,
+      event
+    });
+  });
+};
+
 // You can add more handlers here, and reference them in serverless.yml
